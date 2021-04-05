@@ -1,0 +1,177 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-03-27 18:54:53
+ * @LastEditTime: 2021-03-29 20:22:40
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \链信app\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="js/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+    <script>
+        function resize() {
+            let winW = document.documentElement.clientWidth;
+            var aa = document.documentElement.style.fontSize = winW * 100 / 750 + 'px';
+        }
+        window.onresize = resize;
+        resize()
+    </script>
+</head>
+
+<body>
+    <div class="homepage">
+        <nav>
+            <div class="mav">
+                <span>商城</span>
+                <span>导航</span>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="输入商品和标题 购买反现金">
+                <img class="cctt" src="img/放大镜.png" alt="">
+                <img class="imgg" src="img/人-摔倒.png" alt="">
+            </div>
+            <div class="introduce">
+                <span>1.搜索商品</span>
+                <span>2.领取优惠卷</span>
+                <span>3.下单得金币</span>
+            </div>
+            <div class="icon">
+                <img src="img/incon.png" alt="">
+            </div>
+        </nav>
+        <div class="icon_bar" id="icon_bar">
+            <ul>
+            </ul>
+        </div>
+        <div class="icon_tit">
+            <ul>
+            </ul>
+        </div>
+        <div class="time">
+            <div class="left">
+                <p>限时秒杀</p>
+                <p1>秒到及赚到</p1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <h3>12:00</h3>
+                        <p>开抢</p>
+                    </li>
+                    <li class="cct">
+                        <h3>13:00</h3>
+                        <p>等会</p>
+                    </li>
+                    <li>
+                        <h3>1:00</h3>
+                        <p>再等会</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 轮播图 -->
+        <div class="lunbo">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="top">
+                            <img src="img/lun1.png" alt="">
+                            <img src="img/lun1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top">
+                            <img src="img/lun1.png" alt="">
+                            <img src="img/lun1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="top">
+                            <img src="img/lun1.png" alt="">
+                            <img src="img/lun1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="commodity">
+            <p><img src="img/皇冠.png" alt=""></p><span>人气热卖</span>
+        </div>
+        <div class="pu">
+            <ul id="cc">
+                <!-- <li>
+                    <div class="left">
+                        <img src="img/pu1.png" alt="">
+                    </div>
+                    <div class="right">
+                        <p><img src="img/天猫-01.png">网红小吃贼好吃吃了还想吃吃了还想吃</p>
+                        <span>面综旗舰店</span>
+                        <span><del>原价￥49.8</del></span>
+                        <div class="center">
+                              <span>销量:6216</span>
+                              <span>￥29.9</span>
+                        </div>
+                      <div class="bottom">
+                          <div class="left"></div>
+                          <div class="right"></div>
+                      </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                <img src="img/房子.png" alt="">
+                <p>首页</p>
+            </li>
+            <li>
+                <img src="img/动态.png" alt="">
+                <p>动态</p>
+            </li>
+            <li>
+                <img id="cct" src="img/快手.png" alt="">
+                <p>快手</p>
+            </li>
+            <li>
+                <img id="cct" src="img/游戏.png" alt="">
+                <p>游戏</p>
+            </li>
+            <li>
+                <img id="cct" src="img/我的.png" alt="">
+                <p>我的</p>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="json/1.js"></script>
+<script src="js/index.js"></script>
+<script>
+    window.onload = function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            autoplay: {
+                delay: 2000, //1秒切换一次
+            },
+            on: {
+                click: function () {
+                    location.href = 'http://baidu.com'
+                }
+            }
+        })
+    }
+</script>
+
+</html>
